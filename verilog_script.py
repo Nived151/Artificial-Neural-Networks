@@ -46,7 +46,7 @@ for layer_index, (weights, biases) in enumerate(weights_and_biases):
  
 # Now `verilog_code` contains the formatted weights and biases for Verilog
 # You can write `verilog_code` to a file
-with open('weights_and_biases.v', 'w') as file:
+with open('weights.v', 'w') as file:
     file.write(verilog_code)
  
-print("Verilog code with weights and biases has been written to 'weights_and_biases.v'")
+print("Verilog code with weights and biases has been written to 'weights.v'")
