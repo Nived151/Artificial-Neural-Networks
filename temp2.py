@@ -30,14 +30,3 @@ model.fit(x_train, y_train_one_hot, epochs=5, validation_data=(x_test, y_test_on
 #summary of model
 model.summary()
  
-# After training, extract weights and biases from each layer
-weights_and_biases = []
- 
-for layer in model.layers:
-    if hasattr(layer, 'get_weights') and len(layer.get_weights()) > 0:
-        weights, biases = layer.get_weights()
-        weights_and_biases.append((weights, biases))
-    else:
-        print(f"Layer {layer.name} has no weights.")
- 
-# Now, `weights_and_biases` is a list where each item is a tuple: (weights, biases) for each layer
