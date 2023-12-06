@@ -8,7 +8,6 @@ def extract_weights_and_biases(model):
             weights_and_biases.append((weights, biases))
     return weights_and_biases
 
-# Replace 'temp2.your_model_variable_name' with the actual variable name of your Keras model in temp2
 weights_and_biases = extract_weights_and_biases(temp2.model)
 
 
